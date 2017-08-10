@@ -6,13 +6,15 @@ const AddWine = () => {
   return (
     <div className='add-wine'>
       <h3>Add Wine</h3>
-      <input type="text" name="Wine Name"/>
+      <input type="text" name="Wine Name" placeholder="Wine Name"/>
       <br/>
-      <input type="text" name="Type"/>
+      <input type="text" name="Type" placeholder="Type"/>
       <br/>
-      <input type="text" name="Year"/>
+      <input type="text" name="Year" placeholder="Year"/>
       <br/>
-      <input type="text" name="Winery"/>
+      <input type="text" name="Winery" placeholder="Winery"/>
+      <br/>
+      <button>Submit</button>
     </div>
   )
 }
