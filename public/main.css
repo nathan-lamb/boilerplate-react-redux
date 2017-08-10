@@ -6,6 +6,14 @@
     text-align: center
   }
 
+  .wine-info {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    display: inline-block;
+    width: 30%
+  }
+
 p {
     display: inline-block
   }
