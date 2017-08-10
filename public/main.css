@@ -1,12 +1,11 @@
-.dot {
-  width: 2rem;
-  height: 2rem;
-  border: 1px #ccc solid;
-  border-radius: 50%;
-}
+  .wine-list {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    width: 20%;
+    text-align: center
+  }
 
-button {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-}
+p {
+    display: inline-block
+  }
