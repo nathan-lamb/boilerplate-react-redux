@@ -1,9 +1,6 @@
-let nextWordId = 0
-
-export const addWord = (word) => {
+export const navigate = (target) => {
   return {
-    type: 'ADD_WORD',
-    id: nextWordId++,
-    word
+    type: 'NAVIGATE',
+    location: target
   }
 }
