@@ -17,3 +17,9 @@
 p {
     display: inline-block
   }
+
+  body {
+    background-image: url("./images/background.jpeg");
+    background-color: #cccccc;
+    background-size: cover;
+}
