@@ -1,6 +1,6 @@
 import React from 'react'
 
-// I think this will need to be a class based function when state is introduced
+import {connect} from 'react-redux'
 
 const AddWine = () => {
   return (
