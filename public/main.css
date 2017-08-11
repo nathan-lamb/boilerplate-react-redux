@@ -9,11 +9,13 @@
   }
 
   .wine-info {
-    border-width: 1px;
+    background-color: white;
+    align-content: center;
+    border-width: 5px;
     border-style: solid;
     border-color: black;
-    display: inline-block;
-    width: 30%
+    width: 30%;
+    text-align: center
   }
 
 p {
