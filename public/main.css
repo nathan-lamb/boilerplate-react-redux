@@ -1,5 +1,7 @@
   .wine-list {
-    border-width: 1px;
+    background-color: white;
+    align-content: center;
+    border-width: 5px;
     border-style: solid;
     border-color: black;
     width: 30%;
@@ -22,6 +24,21 @@ p {
     background-image: url("./images/background.jpeg");
     background-color: #cccccc;
     background-size: cover;
-    font-family: 'denseregular';
+    
 }
 
+h1 {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 6.0rem;
+  text-align: center;
+  margin-top: 0px;
+  color:  #990033;
+}
+
+h3 {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  color:  #990033;
+  font-size: 2.0rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
