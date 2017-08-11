@@ -1,20 +1,26 @@
+import http from 'http'
 import express from 'express'
-import config from '../config'
-import middleware from '../middleware'
-import initializeDb from '../db'
-import wine from '../controller/wine'
+import bodyParser from 'body-parser'
+import mongoose from 'mongoose'
+import config from './config'
+import routes from './routes'
 
-const router = express()
+let app = express()
+app.server = http.createServer(app)
 
-//connect to db
+//middleware
+//parser application /json
+app.use(bodyParser.json({
+    limit: config.bodyLimit
+}))
 
-initializeDb (db =>{
+//conifg
 
-    // internal middleware
-    router.use(middleware({config,db}))
 
-    //api routes v1 
-    router.use('/wine',wine({config, db}))
-})
+//api router v1
+app.use('/v1',routes)
 
-export default router
+app.server.listen(config.port)
+console.log(`Started on port ${app.server.address().port}`)
+
+export default app
