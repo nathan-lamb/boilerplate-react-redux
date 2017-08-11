@@ -2,7 +2,8 @@ import {combineReducers} from 'redux'
 
 import words from './words'
 
-export default combineReducers({
-  words
-})
+import wines from './wines'
 
+export default combineReducers({
+  words, wines
+})
